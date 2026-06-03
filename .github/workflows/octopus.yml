@@ -1,0 +1,15 @@
+name: Octopus Review Dispatch
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths-ignore:
+      - '.github/workflows/octopus.yml'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  octopus_review:
+    uses: mats-test-org/workflows/.github/workflows/octopus-review.yml@master
