@@ -12,4 +12,4 @@ permissions:
 
 jobs:
   octopus_review:
-    uses: mats-test-org/workflows/.github/workflows/octopus-review.yml@master
+    uses: mats-test-org/workflows/.github/workflows/octopus-review.yml@main
